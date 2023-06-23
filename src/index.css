@@ -1,13 +1,137 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: lightblue;
+}
+
+.custom-form {
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.input-and-btn {
+  display: flex;
+}
+
+/* align the check icons */
+.todo-box {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todo-box {
+}
+
+/* align the icons and the text */
+.todo-box .content {
+  display: flex;
+}
+
+.todo-box .content p {
+  margin-top: -6px;
+  margin-left: 6px;
+}
+
+/* separate the delete and update icons */
+.todo-box span {
+  margin: 0 5px;
+}
+
+/* the delete btn size */
+.delete-all {
+  width: 400px;
+}
+
+/* delete update btns */
+.actions-box {
+  cursor: pointer;
+}
+
+.back-btn {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inpBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  /* color: white; */
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+.addBtn {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.addBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .addBtn {
+    padding: 10px 30px;
+  }
+}
+
+.checkBx {
 }
